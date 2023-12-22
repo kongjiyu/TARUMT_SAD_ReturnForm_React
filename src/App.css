@@ -1,0 +1,16 @@
+.container{
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+.btn-block{
+  animation: all .5s ease;
+}
+
+.btn-block:hover{
+  background-color: black;
+  color: white;
+}
