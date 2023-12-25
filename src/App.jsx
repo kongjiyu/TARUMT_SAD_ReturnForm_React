@@ -4,16 +4,23 @@ import Product from './Product.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [products, setProducts] = useState([<Product key={0} />]);
+
+  const handleAddProduct = () => {
+    const newProducts = [...products, <Product key={products.length} />];
+    setProducts(newProducts);
+    setCount(newProducts.length);
+  };
 
   return (
     <div className="container">
       <h1 style={{ fontWeight: 'bold' }}>Stock Return Form</h1>
       <form action="">
         {/* Stock ID */}
-      <Product />
+      {products}
 
         <div className="form-group">
-          <button type="button" class="btn btn-secondary btn-lg btn-block">+</button>
+          <button type="button" onClick={handleAddProduct} class="btn btn-secondary btn-lg btn-block">+</button>
         </div>
         
 

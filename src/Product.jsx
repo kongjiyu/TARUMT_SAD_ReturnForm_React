@@ -1,8 +1,9 @@
 import React from "react";
 
-function Product() {
+export default function Product() {
     return (
         <div>
+            <hr />
             <div className="form-group">
                 <label htmlFor="productID">Product ID:</label>
                 <input className="form-control" id="productID" placeholder="Enter Product ID" name="productID" />
@@ -20,3 +21,4 @@ function Product() {
         </div>
     )
 }
+
