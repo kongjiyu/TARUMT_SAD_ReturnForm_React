@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Product from './Product.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,20 +10,7 @@ function App() {
       <h1 style={{ fontWeight: 'bold' }}>Stock Return Form</h1>
       <form action="">
         {/* Stock ID */}
-        <div className="form-group">
-          <label htmlFor="productID">Product ID:</label>
-          <input className="form-control" id="productID" placeholder="Enter Product ID" name="productID" />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="productName">Product Name:</label>
-          <input className="form-control" id="productName" placeholder="Enter Product Name" name="productName" />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="quantity">Quantity:</label>
-          <input type="number" className="form-control" id="quantity" placeholder="Enter quantity" name="quantity" min="1" />
-        </div>
+      <Product />
 
         <div className="form-group">
           <button type="button" class="btn btn-secondary btn-lg btn-block">+</button>
