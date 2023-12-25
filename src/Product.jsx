@@ -5,13 +5,13 @@ export default function Product() {
         <div>
             <hr />
             <div className="form-group">
-                <label htmlFor="productID">Product ID:</label>
-                <input className="form-control" id="productID" placeholder="Enter Product ID" name="productID" />
+                <label htmlFor="stockID">Stock ID:</label>
+                <input className="form-control" id="stockID" placeholder="Enter Stock ID" name="stockID" />
             </div>
 
             <div className="form-group">
-                <label htmlFor="productName">Product Name:</label>
-                <input className="form-control" id="productName" placeholder="Enter Product Name" name="productName" />
+                <label htmlFor="stockName">Stock Name:</label>
+                <input className="form-control" id="stockName" placeholder="Enter Stock Name" name="stockName" />
             </div>
 
             <div className="form-group">
